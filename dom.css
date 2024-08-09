@@ -1,0 +1,43 @@
+.youtube{
+    font-size: 20px;
+}
+.not-subscribed{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 35px;
+    border:none;
+    cursor: pointer;
+    
+}
+.is-subscribed{
+    background-color: rgb(156, 156, 156);
+    color: black;
+
+}
+.amazonText1{
+    width: 300px;
+    font-size: larger;
+    margin: 0;
+    
+}
+.amazonText2{
+    width: 340px;
+    font-size: large;
+}
+input{
+    padding: 10px 15px 10px 15px;
+    font-size: 15px;
+}
+.claculate{
+    background-color: green;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}

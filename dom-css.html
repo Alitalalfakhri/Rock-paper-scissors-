@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body>
+    <p class="youtube">youtube subscribe button</p>
+    <button id="subscribe" onclick="subscribeTest()"  class="not-subscribed">subscribe</button>
+ 
+    <p class="amazonText1">Amazon Shipping Calculator</p>
+
+    <p class="amazonText2">Orders under $40 = +$10 shipping.</p>
+
+  <p class="amazonText2">Orders over $40 = FREE shipping.</p>
+
+<input onkeydown="checkkey()"
+
+type="number" placeholder="cost of order" id="input"> </input>
+<button onclick="claculte()" class="claculate">claculate</button>
+<p id="p"></p>
+<p>rock paper scissors</p>
+<a href="ro-pa-s-css.html">rock paper scissors</a>
+<p id="p"></p>
+   
+   
+   
+   
+   <script  >
+    function subscribeTest() {
+    let buttonText = document.getElementById('subscribe');
+    if (buttonText.innerText === 'subscribe') {
+        buttonText.innerText = 'subscirbed';
+      buttonText.classList.add('is-subscribed');
+ 
+
+    } else if (buttonText.innerText === 'subscirbed') {
+        buttonText.innerText = 'subscribe';
+        buttonText.classList.remove('is-subscribed');
+   
+    }
+  }
+  function claculte(){
+    let   inputValue = document.getElementById('input').value
+    if (inputValue > 40) {
+        document.getElementById('p').innerText = inputValue
+    } else if(inputValue < 40){
+        document.getElementById('p').innerHTML = inputValue = parseInt(inputValue) + 10;            }
+       document.getElementById('p').innerHTML = inputValue
+    }
+    function checkkey() {
+      if (event.key === 'Enter') {
+      claculte()
+  } 
+    }
+    </script>
+</body>
+</html>
